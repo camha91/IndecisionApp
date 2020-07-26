@@ -15,7 +15,7 @@ var toggleVisibility = function toggleVisibility() {
 var appRoot = document.getElementById('app');
 
 var render = function render() {
-    var jsx = React.createElement(
+    var template = React.createElement(
         'div',
         null,
         React.createElement(
@@ -39,7 +39,7 @@ var render = function render() {
         )
     );
 
-    ReactDOM.render(jsx, appRoot);
+    ReactDOM.render(template, appRoot);
 };
 
 render();
