@@ -1,15 +1,7 @@
-// import './utils.js';
+// install --> import --> use
 
-import subtract, { square, add } from './utils.js';
-import isSenior, { isAdult, canDrink } from './person.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('app.js is running!');
-
-console.log(square(4));
-console.log(add(10, 23));
-console.log(subtract(100, 81));
-
-console.log(isAdult(18));
-console.log(canDrink(21));
-console.log(isSenior(64));
-
+const template = <p>THIS IS JSX FROM WEBPACK</p>;
+ReactDOM.render(template, document.getElementById('app'));
